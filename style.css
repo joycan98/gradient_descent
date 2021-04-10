@@ -28,7 +28,18 @@ button.undo_button {
 
 div.printed_rate {
     position: absolute;
-    lefT: 10px;
+    left: 10px;
     top: 600px;
 }
 
+button.change_button {
+    position: absolute;
+    left: 10px;
+    top: 630px;
+    border-radius: 8px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 12px;
+    border: none;
+    padding: 8px 8px;
+}
