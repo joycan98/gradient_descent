@@ -16,23 +16,20 @@
 
 <button type="button" class = "undo_button" onclick="undo();">Undo</button>
 
-<script>
-    function change_rate(x) {
-        learning_rate = x;
-    }
-</script>
-
 <div class = "printed_rate" id = "printed_rate">
     Learning rate: 0.05.
 </div>
 
 <script>
-
-    var input_value = prompt("Enter learning rate:");
-    document.getElementById("printed_rate").innerHTML = "Learning rate: " + input_value + ".";
-    learning_rate = input_value;
+    function get_value() {
+        var input_value = prompt("Enter learning rate:");
+        document.getElementById("printed_rate").innerHTML = "Learning rate: " + input_value + ".";
+        learning_rate = input_value;
+    }
 
 </script>
+
+<button type="button" class = "change_button" onclick = "get_value()">Change</button>
 
 </body>
 </html>
