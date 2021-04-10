@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playing With Gradient Descent<</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+</head>
+<body>
+<h1>Playing With Gradient Descent</h1>
+
+<script src="/gradient_descent/sketch.js"></script>
+
+<button type="button" class = "clear_button" onclick="_clear();">Clear</button>
+
+<button type="button" class = "undo_button" onclick="undo();">Undo</button>
+
+<script>
+    function change_rate(x) {
+        learning_rate = x;
+    }
+</script>
+
+<div class = "printed_rate" id = "printed_rate">
+    Learning rate: 0.05.
+</div>
+
+<script>
+
+    var input_value = prompt("Enter learning rate:");
+    document.getElementById("printed_rate").innerHTML = "Learning rate: " + input_value + ".";
+    learning_rate = input_value;
+
+</script>
+
+</body>
+</html>
